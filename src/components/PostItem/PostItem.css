@@ -1,0 +1,21 @@
+.post_container {
+    border: 3px solid #0f9e46;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post_title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.post_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.post_btns {
+    display: flex;
+}

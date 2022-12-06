@@ -1,0 +1,10 @@
+.new_post_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.new_post_input {
+    border: 1px solid #0f9e46;
+    margin-bottom: 10px;
+}

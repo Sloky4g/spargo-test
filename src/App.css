@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+/* Main Fonts */
+@font-face {
+    font-family: "LoraRegular";
+    src: local("LoraRegular"), url(./fonts/Lora-Regular.woff) format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "LoraBold";
+    src: local("LoraBold"), url(./fonts/Lora-Bold.woff) format("woff");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Base styles */
+body * {
+    font-family: "LoraRegular", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "LoraBold", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.base_styled_btn {
+    border: 1px solid #0f9e46;
+    padding: 3px 10px 5px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #696969;
+    cursor: pointer;
+}
+
+.base_styled_btn:hover {
+    background-color: #eee;
+}
+
+.base_styled_btn:active {
+    background-color: #ccc;
+}
+
+.base_styled_btn:disabled {
+    border: 1px solid #ccc;
+}
+
+.base_styled_btn:disabled:hover {
+    background-color: #fff;
+}
+
+.decoration_line {
+    margin: 20px 0;
+    border: 1px solid #ccc;
 }
